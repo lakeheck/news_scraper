@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Aug  3 11:39:16 2019
-
 @author: lakeh
 """
 import smtplib
