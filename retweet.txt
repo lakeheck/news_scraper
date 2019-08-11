@@ -1,0 +1,90 @@
+Developer Chris Wetherell built Twitter’s retweet button. And he regrets what he did to this day.
+
+“We might have just handed a 4-year-old a loaded weapon,” Wetherell recalled thinking as he watched the first Twitter mob use the tool he created. “That’s what I think we actually did.”
+
+Wetherell, a veteran tech developer, led the Twitter team that built the retweet button in 2009. The button is now a fundamental feature of the platform, and has been for a decade — to the point of innocuousness. But as Wetherell, now cofounder of a yet-unannounced startup, made clear in a candid interview, it’s time to fix it. Because social media is broken. And the retweet is a big reason why.
+
+He’s not the only one reexamining the retweet. Twitter CEO Jack Dorsey told BuzzFeed News he is too: “Definitely thinking about the incentives and ramifications of all actions, including retweet,” he said. “Retweet with comment for instance might encourage more consideration before spread.”
+
+Yet emphasizing that retweet with comment won’t necessarily solve Twitter’s ills. Jason Goldman, the head of product when Wetherell built the retweet, said it’s a key source of Twitter’s problems today. “The biggest problem is the quote retweet,” Goldman told BuzzFeed News. “Quote retweet allows for the dunk. It’s the dunk mechanism.”
+
+ 
+Jason Henry for BuzzFeed News
+Chris Wetherell
+
+Wetherell’s story begins 10 years ago. He joined Twitter in 2009 as a contractor fresh off a run at Google, where he built Google Reader, a once-beloved RSS aggregator the company has since discontinued. In working on Reader, Wetherell immersed himself in the study of how information spreads online, and built a reputation in Silicon Valley for his expertise. So when Evan Williams, then the CEO of Twitter, wanted to build a retweet button, he called Wetherell.
+
+“I was very excited about the opportunity that Twitter represented,” Wetherell said, noting that he initially felt the retweet button would elevate voices from underrepresented communities.
+
+Before Wetherell joined Twitter, people had to manually retweet each other — copying text, pasting it into a new compose window, typing “RT” and the original tweeter’s handle, and hitting send. With the retweet button, Twitter wanted to build this behavior into its product — a standard practice in tech that, at the time, was performed without much thought.
+
+“Quote retweet allows for the dunk. It’s the dunk mechanism.”
+“Only two or three times did someone ask a broader and more interesting social question, which was, ‘What is getting shared?’” Wetherell said. “That almost never came up.”
+
+After the retweet button debuted, Wetherell was struck by how effectively it spread information. “It did a lot of what it was designed to do,” he said. “It had a force multiplier that other things didn’t have.”
+
+“We would talk about earthquakes,” Wetherell said. “We talked about these first response situations that were always a positive and showed where humanity was in its best light.”
+
+But the button also changed Twitter in a way Wetherell and his colleagues didn’t anticipate. Copying and pasting made people look at what they shared, and think about it, at least for a moment. When the retweet button debuted, that friction diminished. Impulse superseded the at-least-minimal degree of thoughtfulness once baked into sharing. Before the retweet, Twitter was largely a convivial place. After, all hell broke loose — and spread.
+
+
+Jason Henry for BuzzFeed News
+Chaos Spreads
+In the early 2010s, Facebook's leadership was looking for ways to drive up engagement. Having previously failed to acquire Twitter, they looked to its product for inspiration.
+
+The allure of going viral via the retweet had drawn publications, journalists, and politicians to Twitter en masse. And their presence shined most prominently during the 2012 election, a big moment for Twitter and a relative dud for Facebook. So Facebook, in a now all too familiar move copied Twitter, adding a trending column, hashtags, and a retweet clone.
+
+“Facebook was doing really well with getting photos of your friends and family, and was looking outward and was saying, ‘What else can we be?’” Josh Miller, a former Facebook product manager, told BuzzFeed News. “Twitter was obviously at its peak, and it was natural for the company to look and say: ‘Wait a minute, the News Feed is about being your newspaper, and it should probably include updates from public discourse, news, personalities, and leaders.’ Facebook didn’t have that in a lot of its content, and Twitter did.”
+
+Eight days after the 2012 election, Facebook introduced its version of the retweet — the mobile share button. And at around the same time, Facebook upped the number of links in its News Feed to encourage more sharing of public content. “It’s kind of an implicit message to people who use Facebook, which is, ‘Hey, News Feed is for links,’” Miller said.
+
+By introducing the button, Facebook invited disaster. And Twitter, which had the same dynamics in place, did too.
+
+An Offensive Conduit
+In 2014, Wetherell realized the retweet button was going to be a major problem when the phrase “ethics in game journalism” started pouring into a saved search for “journalism” he had on Twitter. The phrase was a rallying cry for Gamergate — a harassment campaign against women in the game industry — and Wetherell, after seeing that first batch of tweets, watched it closely.
+
+As Gamergate unfolded, Wetherell noticed its participants were using the retweet to “brigade,” or coordinate their attacks against their targets, disseminating misinformation and outrage at a pace that made it difficult to fight back. The retweet button propelled Gamergate, according to an analysis by the technologist and blogger Andy Baio. In his study of 316,669 Gamergate tweets sent over 72 hours, 217,384 were retweets, or about 69%.
+
+Watching the Gamergate tweets pour in, Wetherell brought up his concerns in therapy and then discussed them with a small circle of engineers working in social media at the time. “This is not something we need to think about,” he recalled one saying.
+
+"It dawned on me that this was not some small subset of people acting aberrantly. This might be how people behave. And that scared me to death.”
+“It was very easy for them to brigade reputational harm on someone they didn't like,” Wetherell said, of the Gamergaters. “Ask any of the people who were targets at that time, retweeting helped them get a false picture of a person out there faster than they could respond. We didn't build a defense for that. We only built an offensive conduit.”
+
+Gamergate was a "creeping horror story for me," Wetherell said. "It dawned on me that this was not some small subset of people acting aberrantly. This might be how people behave. And that scared me to death.”
+
+Twitter, from that moment, became an “anger video game.” Retweets were the points.
+
+The game took another dark turn during the 2016 presidential campaign, when impulse-sparked sharing caused outrage and disinformation to flourish on both Twitter and Facebook. It’s one thing to copy and paste a link that says Hillary Clinton is running a pedophile ring in the basement of a pizza shop — and share it under your own name. It’s another to see someone else post it, remember that you don’t like Hillary Clinton, and impulsively hit the share or retweet button.
+
+“We have some evidence that people who are more likely to stop and think are better at telling true from false,” David Rand, an associate professor at MIT who studies misinformation, told BuzzFeed News. “Even for stuff that they are motivated to believe, people who stop and think more are less likely to believe the false stuff.”
+
+It wasn’t only politicians and foreign entities that geared their messaging to stoke outrage-sparked sharing, but the press, too. In the rush to get stories that would be retweeted and shared, they disregarded speed bumps that might otherwise cause them to hold on a story, such as in the case of Jussie Smollett, the actor who police say staged a hate crime earlier this year.
+
+The benefits of creating such content accrued disproportionately to the fringe. When someone retweets something, they’re sharing the content with their followers, but also sending a signal to the person they’re amplifying, said Anil Dash, a blogger and tech entrepreneur. The more fringe the original tweeter, the more valuable the retweet.
+
+“If I retweet the New York Times, they don’t care,” Dash said. “But extreme content comes from people who are trying to be voices, who are trying to be influential in culture, and so it has meaning to them, and so it earns me status with them.”
+
+The pursuit of that status has driven many Twitter users to write outrageous tweets in the hope of being retweeted by fringe power users. And when they do get retweeted, it sometimes lends a certain credibility to their radical positions.
+
+The retweet and share, in other words, incentivize extreme, polarizing, and outrage-inducing content.
+
+
+Jason Henry for BuzzFeed News
+Undo Retweet
+After a brutal 2016 election season, Facebook and Twitter reformed their policies. But as a new presidential election approaches, their services remain filled with harassment, outrage, and sensationalized news — because the companies have barely touched the machinery itself.
+
+Advertising revenue keeps the system in place. For every dollar an advertiser spends pumping up a piece of sponsored content, it can count on some amount of shares and retweets to expand its audience organically.
+
+“The more users see information that interests them, the more time they’ll spend on the platform; more views will be generated, and this creates the potential for greater advertising revenue,” said John Montgomery, the global executive vice president for brand safety at GroupM, a major media buyer. Without a retweet button, Wetherell said, brands “would certainly be less inclined to have a financial relationship with [a platform]. And when you're Twitter and that's vastly your primary source of income, that might be a challenge.”
+
+A full rollback of the share and retweet buttons is unrealistic, and Wetherell doesn’t believe it’s a good idea. Were these buttons universally disabled, he said, people could pay users with large audiences to get their message out, giving them disproportionate power.
+
+"Oh no, we put power into the hands of people.”
+To rein in the excesses of the retweet, Wetherell suggested the social media companies turn their attention toward audiences. When thousands of people retweet or share the same tweet or post, they become part of an audience. A platform could revoke or suspend the retweet ability from audiences that regularly amplify awful posts, said Wetherell. “Curation of individuals is way too hard, as YouTube could attest,” Wetherell said. “But curation of audiences is a lot easier.”
+
+Another solution might be to limit on the number of times a tweet can be retweeted. Facebook is experimenting with an approach of this nature, although not in its main product. Earlier this year, WhatsApp, which is owned by Facebook, limited the number of people to which a message could be forwarded to five at a time, in response to quick-spreading rumors and disinformation. “The forward limit significantly reduced forwarded messages around the world,” WhatsApp said in a blog post. “We'll continue to listen to user feedback about their experience, and over time, look for new ways of addressing viral content.”
+
+MIT’s Rand suggested another idea: preventing people from retweeting an article if they haven’t clicked on the link. “That could make people slow down,” he said. “But even more than that, it could make people realize the problematic nature of sharing content without having actually read it.”
+
+Whatever the solution, Wetherell looks at the retweet very differently than he once did — a lesson that he thinks has broader implications. “I remember specifically one day thinking of that phrase: We put power in the hands of people,” he said. “But now, what if you just say it slightly differently: Oh no, we put power into the hands of people.” ●
+
