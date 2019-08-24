@@ -4,12 +4,16 @@ import smtplib
 from datetime import date
 
 
-def send_email(articles):
-    gmail_user = 'chuckfinley1932@gmail.com'
-    gmail_password = 'grnd9lake'
+def send_email(articles, credentials, recipients):
+    #load text file with email address and password - to keep offline for security 
+    with open(credentials, mode='r') as file:
+        content = file.read().split('\n')
+     #use contents of text file to set user and password vars  
+    gmail_user = content[0]
+    gmail_password = content[1]
     
     sent_from = gmail_user
-    to = ['lake.heckaman@ubs.com', 'lakeheckaman@gmail.com']
+    to = recipients
     subject = 'News ' + str(date.today())
     body = articles
     

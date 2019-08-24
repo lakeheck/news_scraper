@@ -14,10 +14,12 @@ from send_email import send_email
 
 def scrape_and_send(scrapers):
     articles = str()
+    recipients = ['lake.heckaman@ubs.com', 'lakeheckaman@gmail.com']
+    #recipients = ['lakeheckaman@gmail.com']
     for scrape in scrapers:
         temp_articles = scrape()
         articles += temp_articles
-    send_email(articles)
+    send_email(articles, recipients)
   
-news_scrapers = [scrape_SCMP, scrape_WSJ, scrape_BBC, scrape_AlJazeera]
+news_scrapers = [scrape_AlJazeera, scrape_PoliticoEU, scrape_SCMP, scrape_WSJ, scrape_BBC]
 scrape_and_send(news_scrapers)

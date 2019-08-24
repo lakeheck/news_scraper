@@ -12,6 +12,9 @@ from nlp_methods import generate_summary
 import lxml
 from logins import *
 
+def has_no_class(tag):
+    return not tag.has_attr('class')
+
 def scrape_SCMP(output='text'):
     #select url   
     papername = "SCMP"
@@ -156,7 +159,7 @@ def scrape_BBC(output = 'text', summary_lines=3):
     soup = BeautifulSoup(coverpage, features="lxml")     
                
     #find the first main article section and then pull all articles that have summaries from this section
-    t = soup.find('div', class_="nw-c-top-stories--standard").find_all('div', class_='gs-c-promo-body')
+    t = soup.find('div', class_="nw-c-top-stories--standard").find_all('div', limit = 5, class_='gs-c-promo-body')
     #pull the link, title, summary text from these articles and store in dict to convert to json
     articles=str()
     articles_json = []
@@ -266,3 +269,65 @@ def scrape_AlJazeera(output='text', summary_lines=3):
     else: print("""please set output = to 'json' or 'text'""")
     
 
+
+
+def scrape_PoliticoEU(output='text', summary_lines=3):
+    #select url   
+    papername = "Politico EU"
+    url = 'https://www.politico.eu/news/'
+    #pull data from API
+    hdr = {'User-Agent': 'Mozilla/5.0'}
+    r1=requests.get(url, headers=hdr)
+    coverpage = r1.content
+    #convert to soup
+    soup = BeautifulSoup(coverpage)
+    #find the first main article section and then pull all articles that have summaries from this section
+    t = soup.find('ul', class_="layout-grid").find_all('div', limit = 5, class_='summary')
+    #pull the link, title, summary text from these articles   
+    articles=str()
+    articles_json = []
+    for i in t:
+        link = f"{i.find('a')['href']}"
+        title = i.find('h3').text
+        try: 
+            summary = i.find('div').text
+        except:
+            summary = str()
+        #use beautiful soup agian to access main text of article and summarize it
+        try: 
+            text = str()
+            r2=requests.get(link, headers=hdr)
+            coverpage = r2.content
+            soup = BeautifulSoup(coverpage, features="lxml")
+            #find the first main article section and then pull all articles that have summaries from this section
+            for pp in soup.find('div', class_='story-text').find_all('p', attrs={'class': None}):
+                text += pp.text
+            summary = generate_summary(text,summary_lines)
+        except: pass
+
+        #concat it all together
+        string = (
+                f"{title}.\n"
+                f"{summary}\n"
+                f"{link}\n\n\n"
+                )
+        if string in articles: pass
+        else: articles += string
+        article_obj = {
+            'title': title, 
+            'text': text, 
+            'link': link
+            }
+        articles_json.append(article_obj)
+    #write articles to a file and return, depending on output type specified
+    if output== 'text':
+#        filename = 'C:\\Users\\lakeh\\Documents\\Python Scripts\\' + papername + str(date.today()) + '.txt'
+#        with open(filename, 'w', encoding='utf8') as text_file:
+#            print(articles, file=text_file) 
+        return articles
+    elif output == 'json':
+        filename = 'C:\\Users\\lakeh\\Documents\\Python Scripts\\'+ papername + str(date.today()) + '.json'
+        with open(filename, 'w') as outfile:
+            json.dump(articles_json, outfile) 
+        return articles_json
+    else: print("""please set output = to 'json' or 'text'""")
