@@ -12,6 +12,8 @@ from website_specific_scrapers import *
 from send_email import send_email
 #from .send_email.py import send_email
 
+credentials = "C:\\Users\\lakeh\\Documents\\proj\\news_scraper_credentials.txt"
+
 def scrape_and_send(scrapers):
     articles = str()
     recipients = ['lake.heckaman@ubs.com', 'lakeheckaman@gmail.com']
@@ -19,7 +21,7 @@ def scrape_and_send(scrapers):
     for scrape in scrapers:
         temp_articles = scrape()
         articles += temp_articles
-    send_email(articles, recipients)
+    send_email(articles, credentials, recipients)
   
 news_scrapers = [scrape_AlJazeera, scrape_PoliticoEU, scrape_SCMP, scrape_WSJ, scrape_BBC]
 scrape_and_send(news_scrapers)
