@@ -16,8 +16,7 @@ credentials = "C:\\Users\\lakeh\\Documents\\proj\\news_scraper_credentials.txt"
 
 def scrape_and_send(scrapers):
     articles = str()
-    recipients = ['lake.heckaman@ubs.com', 'lakeheckaman@gmail.com']
-    #recipients = ['lakeheckaman@gmail.com']
+    recipients = ['lakeheckaman@gmail.com']
     for scrape in scrapers:
         temp_articles = scrape()
         articles += temp_articles
